@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sir Michael Driving School</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0b0b0b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---------- HERO SECTION ---------- */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      padding: 60px 8%;
+      align-items: center;
+    }
+
+    .hero-text h1 {
+      color: #ffcc00;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    .hero-text h2 {
+      margin-top: 10px;
+      font-size: 1.8rem;
+    }
+
+    .hero-text p {
+      margin: 15px 0 25px;
+      font-size: 1rem;
+      color: #dddddd;
+    }
+
+    .contact-buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background: #ffcc00;
+      color: #000;
+      padding: 12px 22px;
+      border-radius: 30px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e6b800;
+      transform: translateY(-2px);
+    }
+
+    .hero-image img {
+      width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+    }
+
+    /* ---------- SERVICES ---------- */
+    .services {
+      background: linear-gradient(135deg, #ff0080, #ffcc00);
+      color: #000;
+      padding: 60px 8%;
+      border-radius: 40px 40px 0 0;
+      margin-top: 50px;
+    }
+
+    .services h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 2.2rem;
+    }
+
+    .service-list {
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .service-item {
+      background: rgba(255,255,255,0.9);
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 12px;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .service-item i {
+      color: #ff0080;
+      font-size: 1.2rem;
+    }
+
+    /* ---------- LOCATION ---------- */
+    .location {
+      padding: 50px 8%;
+      text-align: center;
+    }
+
+    .location h2 {
+      color: #ffcc00;
+      margin-bottom: 15px;
+    }
+
+    .location p {
+      font-size: 1.1rem;
+    }
+
+    /* ---------- SOCIAL MEDIA ---------- */
+    .socials {
+      background: #111;
+      padding: 40px 8%;
+      text-align: center;
+    }
+
+    .socials h3 {
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.5rem;
+    }
+
+    .social-icons a {
+      background: #ffcc00;
+      color: #000;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.1);
+      background: #e6b800;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #000;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .contact-buttons {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>LEARN HOW TO DRIVE</h1>
+      <h2>Sir Michael Driving School</h2>
+      <p><strong>Motto:</strong> Drive With Confidence And Awareness</p>
+
+      <div class="contact-buttons">
+        <a href="tel:0508734613" class="btn">
+          <i class="fas fa-phone"></i> 0508734613
+        </a>
+        <a href="https://wa.me/233550700760" class="btn">
+          <i class="fab fa-whatsapp"></i> 0550700760
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image">
+      <!-- Replace with your real image -->
+      <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" alt="Driving School">
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-list">
+      <div class="service-item">
+        <i class="fas fa-car"></i> Professional Driving Lessons
+      </div>
+      <div class="service-item">
+        <i class="fas fa-gears"></i> Manual & Automatic Training
+      </div>
+      <div class="service-item">
+        <i class="fas fa-road"></i> Road Safety Training
+      </div>
+      <div class="service-item">
+        <i class="fas fa-id-card"></i> Driver’s License Processing
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION -->
+  <section class="location">
+    <h2><i class="fas fa-location-dot"></i> Location</h2>
+    <p>Wasa Akropong</p>
+  </section>
+
+  <!-- SOCIAL MEDIA -->
+  <section class="socials">
+    <h3>Connect With Us</h3>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+    </div>
+    <p style="margin-top:15px;">Sir Michael Driving School</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2026 Sir Michael Driving School | All Rights Reserved
+  </footer>
+
+</body>
+</html>
